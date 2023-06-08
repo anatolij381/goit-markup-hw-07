@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body class="body">
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="click-button" data-modal-close>
+                <svg class="click" width="8" height="8">
+                    <use href="./images/sprite.svg#icon-click_close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <fieldset class="form-group">
+                    <legend class="form-title">Leave your contacts and we will call you back</legend>
+                    <div class="form-group-label">
+                        <label class="form-label">
+                            Name
+                            <input class="form-input" type="use_name" name="use_name">                    
+                            <svg class="form-icon" width="12" height="12">
+                               <use href="./images/sprite.svg#icon-person_black"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-group-label">
+                        <label class="form-label">
+                            Phone
+                            <input class="form-input" type="use_phone" name="use_phone">                    
+                            <svg class="form-icon" width="12" height="12">
+                               <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-group-label">
+                        <label class="form-label">
+                            Email
+                            <input class="form-input" type="use_mail" name="use_mail">                    
+                            <svg class="form-icon" width="12" height="12">
+                               <use href="./images/sprite.svg#icon-email"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-group-label">
+                        <label class="form-label">
+                            Comment
+                            <textarea class="form-input-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+                        </label>
+                    </div>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="polici" id="polici">
+                        I accept the terms and conditions of the <span class="form-checkbox-span">Privacy Policy</span>
+                    </label>
+                    <button class="modal-button button" type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+   
+    
+    <!-- шапка -->
+    <header class="header">
+        <!-- навігація сайту -->
+        <div class="container header-flex">
+            <nav class="header-nav header-nav-flex">
+                <a class="logo" href="./index.html"><span class="accent">WEB</span>STUDIO</a>
+                <ul class="menunav">
+                    <li class="menunav-studio activ">
+                        <a class="nav" href="./index.html">Studio</a>                        
+                    </li>
+                    <li class="menunav-portfolio ">
+                        <a class="nav" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menunav-contacts ">
+                        <a class="nav" href="./contakts.html">Contacts</a>
+                    </li>
+                </ul>
+                
+            </nav>            
+            <!-- контактні дані -->
+            <address class="contacts">
+                <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+            </address>
+            <button class="header-button">
+                <svg class="" width="32" height="22">
+                <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- герой -->
+    <section class="hero container">
+        <div class="">
+            <div class="hero-title">
+                <h1 class="hero-title-text">Effective Solutions for Your Business</h1>
+            </div>
+            <button class=" hero-button button" data-modal-open>Order Service</button>
+        </div>
+    </section>
+    <div class="section">
+        <section class="advantage container">
+            <!--  -->
+            <h2>advantage</h2>
+            <ul class="main-flex">
+                <li>
+                    <svg class="advantage-list">
+                        <use href="./images/sprite.svg#icon-antenna"></use>
+                    </svg>
+                    <h3 class="advantage-title">Strategy</h3>
+                    <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                </li>
+                <li>
+                    <svg class="advantage-list">
+                        <use href="./images/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <h3 class="advantage-title">Punctuality</h3>
+                    <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                </li>
+                <li>
+                    <svg class="advantage-list">
+                        <use href="./images/sprite.svg#icon-diagram"></use>
+                    </svg>
+                    <h3 class="advantage-title">Diligence</h3>
+                    <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                </li>
+                <li>
+                    <svg class="advantage-list">
+                        <use href="./images/sprite.svg#icon-astronaut"></use>
+                    </svg>
+        
+                    <h3 class="advantage-title">Technologies</h3>
+                    <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="section">
+        <section class="doing container">
+            <!-- що ми робимо -->
+            <h2 class="title">What are we doing</h2>
+            <ul class="main-flex">
+                <li class="doing-list"><img src="./images/Rectangle-1.jpg" alt="computer applications"></li>
+                <li class="doing-list"><img src="./images/Rectangle-2.jpg" alt="phone application"></li>
+                <li class="doing-list"><img src="./images/Rectangle-3.jpg" alt="applications for the tablet"></li>
+            </ul>
+        </section>
+    </div>
+    <div class="section">
+        <section class="team">
+            <!-- наша команда -->
+            <h2 class="title">Our Team</h2>
+            <ul class="container main-flex">
+                <li class="team-list">
+                    <img class="team-images" src="./images/img1.jpg" alt="Mark Guerrero">
+                    <div class="team-card">
+                        <h3 class="team-name">Mark Guerrero</h3>
+                        <p class="text">Product Designer</p>
+                        <ul class="team-nav">
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="team-list">
+                    <img class="team-images" src="./images/img2.jpg" alt="Tom Ford">
+                    <div class="team-card">
+                        <h3 class="team-name">Tom Ford</h3>
+                        <p class="text">Frontend Developer</p>
+                        <ul class="team-nav">
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="team-list">
+                    <img class="team-images" src="./images/img3.jpg" alt="Camila Garcia">
+                    <div class="team-card">
+                        <h3 class="team-name">Camila Garcia</h3>
+                        <p class="text">Marketing</p>
+                        <ul class="team-nav">
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="team-list">
+                    <img class="team-images" src="./images/img4.jpg" alt="Daniel Wilson">
+                    <div class="team-card">
+                        <h3 class="team-name">Daniel Wilson</h3>
+                        <p class="text">UI Designer</p>
+                        <ul class="team-nav">
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="" width="40" height="40">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- клієнти -->
+    <div class="section">
+        <section class="clients container">
+            <h2 class="title">Customers</h2>
+            <div class="clients-list main-flex">
+                <a class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_1"></use>
+                    </svg>
+                </a>
+                <a  class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_2"></use>
+                    </svg>
+                </a>
+                <a  class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_3"></use>
+                    </svg>
+                </a>
+                <a  class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_4"></use>
+                    </svg>
+                </a>
+                <a  class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_5"></use>
+                    </svg>
+                </a>
+                <a  class="clients-card" href="">
+                    <svg class="clients-icon" width="104" height="56">
+                        <use  href="./images/sprite.svg#icon-client_6"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>       
+    </div>
+    <!-- подвал -->
+    <div class="section">
+        <footer class="footer">
+            <div class="container footer-flex">
+                <div class="footer-text">
+                    <a class="footer-logo logo" href="./index.html">
+                        <span class="accent">WEB</span>STUDIO
+                    </a>
+                    <!-- поштова адреса -->
+                    <address class="address" lang="uk-ua">м. Київ,<br> Бульвар Лесі Українки, б. 26,<br> 4й поверх офіс 427</address>
+                </div>
+                <div class="soc">
+                    <h3 class="social">Social media</h3>
+                    <div class="footer-nav">
+                        <a class="nav-social" href="">
+                            <svg width="40" height="40">
+                                <use href="./images/sprite.svg#icon-instagram_1"></use>
+                            </svg>
+                        </a>
+                        <a class="nav-social" href="">
+                            <svg width="40" height="40">
+                                <use href="./images/sprite.svg#icon-twitter_1"></use>
+                            </svg>
+                        </a>
+                        <a class="nav-social" href="">
+                            <svg width="40" height="40">
+                                <use href="./images/sprite.svg#icon-facebook_1"></use>
+                            </svg>
+                        </a>
+                        <a class="nav-social" href="">
+                            <svg width="40" height="40">
+                                <use href="./images/sprite.svg#icon-linkedin_1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <h3 class="subscribe">Subscribe</h3>
+                    <div class="subscribe-flex">
+                        <input class="subscribe-button-input" type="email" name="email" placeholder="E-mail">
+                        <a class="subscribe-button-subscribe" href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
