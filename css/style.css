@@ -17,17 +17,15 @@ html {
     --iris: #4D5AE5;
     --ocean: #404BBF;
     --LIGHT_SLATE: #8e8f99;
-/* h2,h3, NAV - NAVY BLUE */
-/* ADRESS,P - SLATE */
-/* WEB, button - IRIS */
-/* button filters - ocean */
 }
 
 body {
-   width: 428px;
-   margin: 0;
-   padding: 0;
-   background-color: var(--background-header);
+    font-family: 'Roboto';
+    font-style: normal;
+    max-width: 428px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-header);
 }
 .backdrop {
     display: none;
@@ -39,7 +37,7 @@ body {
 }
 
 .header {
-    width: 100%;
+    width: 428px;
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: var(--background-header);
@@ -105,8 +103,6 @@ body {
 
 .hero-title-text {
     margin: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
@@ -127,12 +123,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background: var(--iris);
-    font-family: 'Roboto';
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
-    font-style: normal;
     color: var(--background-header);
     transition-property: background-color;
     transition-duration: 250ms;
@@ -145,6 +139,7 @@ body {
 /* advantage */
 
 .advantage {
+    width: 428px;
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -157,8 +152,6 @@ body {
 .advantage-title {
     margin-top: 72px;
     margin-bottom: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
@@ -173,8 +166,6 @@ body {
 .advantage .text {
     margin-top: 8px;
     margin-bottom: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;    
@@ -193,14 +184,13 @@ body {
 /* TEAM */
 
 .team {
+    width: 428px;
     background-color: var(--cloud);
     padding: 96px 82px;
 }
 
 .team .title {
     margin: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
@@ -220,6 +210,7 @@ body {
 }
 
 .team-card {
+    width: 264px;
     padding: 32px 14px;
     background: var(--background-header);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -228,8 +219,6 @@ body {
 
 .team-name {
     margin: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -241,8 +230,6 @@ body {
 }
 .team-card .text {
     margin-top: 8px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -262,13 +249,12 @@ body {
 }
 
 .clients {
+    width: 428px;
     padding-top: 96px;
     padding-bottom: 96px;
 }
 .clients .title {
     margin: 0;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -305,6 +291,7 @@ body {
 
 
 .footer {
+    width: 428px;
     padding-top: 96px;
     padding-bottom: 96px;
     background-color: var(--navy-blue);
@@ -321,8 +308,6 @@ body {
     margin-top: 16px;
     margin-bottom: 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;  
@@ -338,8 +323,6 @@ body {
 .social {
     margin: 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;    
@@ -372,8 +355,6 @@ body {
 .subscribe {
     margin: 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -389,8 +370,6 @@ body {
     height: 40px;
     background-color: var(--navy-blue);
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -419,8 +398,6 @@ body {
     background: var(--iris);
     border-radius: 4px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;    
@@ -441,13 +418,6 @@ body {
     width: 24px;
     height: 20px;
 }
-
-
-
-
-
-
-
 .doing {
     display: none;
 }
