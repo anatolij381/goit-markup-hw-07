@@ -37,6 +37,11 @@ html {
         padding-right: 16px;
         margin-right: auto;
     }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
             /* MODAL */
             
@@ -202,7 +207,103 @@ html {
     .form-checkbox-span {
         color: var(--iris);
     }
-    
+           /* MODAL-MENU */
+
+    .modalmenu {
+
+        position: relative;
+        width: 428px;
+        height: 796px;
+        padding: 40px;
+
+        background: var(--background-header);
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+    .modalmenu .click-button {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .modalmenu-page {
+        list-style: none;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .modalmenu-page li {
+        margin-bottom: 40px;
+    }
+
+    .modalmenu-page .nav {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        
+        color: var(--navy-blue);
+        transition-property: color;
+        transition: 250ms cubic-bezier(0.4, 0.2, 0, 1);
+    }
+    .modalmenu-page .nav:focus,
+    .modalmenu-page .nav:hover {
+        color: var(--ocean);
+    }
+
+
+    .modalmenu-contacts {
+        margin-top: 284px;
+    }
+
+    .modalmenu-contacts .tel {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        text-decoration: none;
+
+        text-transform: capitalize;
+        
+        color: var(--iris);
+    }
+
+    .modalmenu-contacts .mail {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-decoration: none;
+        
+        letter-spacing: 0.02em;
+        
+        color: var(--slate);
+
+        margin-top: 40px;
+        transition-property: color;
+        transition: 250ms cubic-bezier(0.4, 0.2, 0, 1);
+
+    }
+    .modalmenu-contacts .mail:focus,
+    .modalmenu-contacts .mail:hover {
+        color: var(--ocean);
+    }
+
+
+    .modalmenu-social {
+        margin-top: 48px;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 56px;
+
+    }
+
+
 
 
     
