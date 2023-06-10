@@ -21,6 +21,7 @@ html {
 
 
     .body {
+        position: relative;
         font-family: 'Roboto';
         font-style: normal;
         max-width: 428px;
@@ -207,11 +208,15 @@ html {
     .form-checkbox-span {
         color: var(--iris);
     }
-           /* MODAL-MENU */
+    /* MODAL-MENU */
+
+    .modalmenu.is-open {
+        opacity: 0;
+        pointer-events: none;
+    }
 
     .modalmenu {
-
-        position: relative;
+        position: fixed;
         width: 428px;
         height: 796px;
         padding: 40px;
