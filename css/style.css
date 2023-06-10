@@ -34,13 +34,15 @@ html {
 
     .container {
         margin-left: auto;
+        margin-right: auto;
         padding-left: 16px;
         padding-right: 16px;
-        margin-right: auto;
+        
+
     }
     img {
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -214,11 +216,14 @@ html {
         opacity: 0;
         pointer-events: none;
     }
+    
 
     .modalmenu {
         position: fixed;
-        width: 428px;
-        height: 796px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         padding: 40px;
 
         background: var(--background-header);
@@ -308,13 +313,7 @@ html {
 
     }
 
-
-
-
-    
-        
     .header {
-        width: 428px;
         padding-top: 24px;
         padding-bottom: 24px;
         background-color: var(--background-header);
@@ -358,7 +357,7 @@ html {
         /* HERO */
         
     .hero {
-        width: 428px;
+        
         text-align: center;
         padding-top: 110px; 
         padding-bottom: 110px;
@@ -373,7 +372,6 @@ html {
         margin: 0;
         margin-left: auto;
         margin-right: auto;
-        padding: 0;
         width: 317px;
         height: 80px;
     }
@@ -416,7 +414,9 @@ html {
         /* advantage */
         
     .advantage {
-        width: 428px;
+        
+
+
         padding-top: 96px;
         padding-bottom: 96px;
     }
@@ -461,7 +461,7 @@ html {
         /* TEAM */
         
     .team {
-        width: 428px;
+        max-width: 428px;
         background-color: var(--cloud);
         padding: 96px 82px;
     }
@@ -487,7 +487,7 @@ html {
     }
         
     .team-card {
-        width: 264px;
+        max-width: 264px;
         padding: 32px 14px;
         background: var(--background-header);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -524,11 +524,20 @@ html {
         list-style: none;
         justify-content: space-between;
     }
+    .team-nav-soc {
+        max-width: 100%;
+        display: block;
+    }
         
     .clients {
-        width: 428px;
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+
+    .clients-icon {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
     .clients .title {
         font-weight: 700;
@@ -547,6 +556,9 @@ html {
     }
         
     .clients-card {
+        display: block;
+        max-width: 100%;
+        height: auto;
         margin-top: 72px;
         padding: 16px 40px;
         width: 190px;
@@ -568,7 +580,6 @@ html {
     
     
     .footer {
-        width: 428px;
         padding-top: 96px;
         padding-bottom: 96px;
         background-color: var(--navy-blue);
@@ -628,6 +639,7 @@ html {
     
     .sub {
         margin-top: 72px;
+
     }
     .subscribe {
         margin: 0;
@@ -640,10 +652,15 @@ html {
         
         color: var(--background-header);
     }
+
+    .subscribe-flex {
+        display: flex;
+        flex-direction: column;
+    }
     .subscribe-button-input {
         margin-top: 16px;
         padding-left: 16px;
-        width: 396px;
+        max-width: 396px;
         height: 40px;
         background-color: var(--navy-blue);
         
@@ -698,6 +715,7 @@ html {
     .doing {
         display: none;
     }
+   
 
     
 
