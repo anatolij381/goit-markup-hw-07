@@ -13,20 +13,70 @@
     
 </head>
 <body class="body">
-     <!-- шапка -->
-     <header class="header">
+     <!-- MODAL-MENU -->
+    <div class="modalmenu is-open js-menu-container" 
+    id="mobile-menu">
+        <button class="click-button js-close-menu">
+            <svg class="click" width="8" height="8">
+                <use href="./images/sprite.svg#icon-click_close"></use>
+            </svg>
+        </button>
+        <ul class="modalmenu-page">
+            <li class="">
+                <a class="nav" href="./index.html">Studio</a>                        
+            </li>
+            <li class="">
+                <a class="nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="">
+                <a class="nav" href="./contakts.html">Contacts</a>
+            </li>
+        </ul>
+        <address class="modalmenu-contacts">
+            <a class="tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+            <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </address>
+        <ul class="modalmenu-social">
+            <li>
+                <svg class="" width="40" height="40">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+            </li>
+            <li>
+                <svg class="" width="40" height="40">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+            </li>
+            <li>
+                <svg class="" width="40" height="40">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </li>
+            <li>
+                <svg class="" width="40" height="40">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </li>
+        </ul>
+        
+
+    </div>
+   
+    
+    <!-- шапка -->
+    <header class="header">
         <!-- навігація сайту -->
         <div class="container header-flex">
             <nav class="header-nav header-nav-flex">
                 <a class="logo" href="./index.html"><span class="accent">WEB</span>STUDIO</a>
                 <ul class="menunav">
-                    <li class="menunav-studio">
+                    <li class="menunav-studio activ">
                         <a class="nav" href="./index.html">Studio</a>                        
                     </li>
-                    <li class="menunav-portfolio activ">
+                    <li class="menunav-portfolio ">
                         <a class="nav" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="menunav-contacts">
+                    <li class="menunav-contacts ">
                         <a class="nav" href="./contakts.html">Contacts</a>
                     </li>
                 </ul>
@@ -36,18 +86,29 @@
                 <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 <a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
             </address>
+            <button class="header-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg class="" width="32" height="22">
+                <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <section class="filters container">
         <!-- кнопки фільтрації контенту -->
-        <h2 class="filters-title">Button filters</h2>
-        <ul class="filters-list card-set">
-            <li><button class="filters-all">All</button></li>
-            <li><button class="filters-website">Web Site</button></li>
-            <li><button class="filters-app">App</button></li>
-            <li><button class="filters-design">Design</button></li>
-            <li><button class="filters-marketing">Marketing</button></li>
-        </ul>
+        <div class="filters-list">
+            <h2 class="filters-title">Button filters</h2>
+            <div class="filters-list-flex">
+                <button class="filters-button">All</button>
+                <button class="filters-button">Web Site</button>
+                <button class="filters-button">App</button>
+            </div>
+            <div class="filters-list-flex">
+                <button class="filters-button">Design</button>
+                <button class="filters-button">Marketing</button>
+            </div>
+        </div>
     </section>    
     <section class="projects container">
         <!-- наші проекти -->
@@ -55,12 +116,12 @@
         <ul class="projects-list">
             <li>
                 <section class="projects-section">
-                    <ul class="main-flex">
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                    <ul class="projects-section-list">
+                        <li class="projects-card">
+                            <a  href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img11.jpg" alt="Banking App Interface Concept">
+                                        <img class="projects-images" src="./images/for_mobile/mob_1.jpg" alt="Banking App Interface Concept">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -70,11 +131,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a  href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img12.jpg" alt="Cashless Payment">
+                                        <img class="projects-images" src="./images/for_mobile/mob_2.jpg" alt="Cashless Payment">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -84,11 +145,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img13.jpg" alt="Meditaion App">
+                                        <img class="projects-images" src="./images/for_mobile/mob_3.jpg" alt="Meditaion App">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -104,12 +165,12 @@
             </li>
             <li>
                 <section class="projects-section">
-                    <ul class="main-flex">
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                    <ul class="projects-section-list">
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img14.jpg" alt="Taxi Service">
+                                        <img class="projects-images" src="./images/for_mobile/mob_4.jpg" alt="Taxi Service">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -119,11 +180,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img15.jpg" alt="Screen Illustrations">
+                                        <img class="projects-images" src="./images/for_mobile/mob_5.jpg" alt="Screen Illustrations">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -133,11 +194,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img16.jpg" alt="Online Courses">
+                                        <img class="projects-images" src="./images/for_mobile/mob_6.jpg" alt="Online Courses">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -152,12 +213,12 @@
             </li>
             <li>
                 <section class="projects-section">
-                    <ul class="main-flex">
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                    <ul class="projects-section-list">
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img17.jpg" alt="Instagram Stories Concept">
+                                        <img class="projects-images" src="./images/for_mobile/mob_7.jpg" alt="Instagram Stories Concept">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -167,11 +228,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img18.jpg" alt="Organic Food">
+                                        <img class="projects-images" src="./images/for_mobile/mob_8.jpg" alt="Organic Food">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -181,11 +242,11 @@
                                 </ul>
                             </a>
                         </li>
-                        <li>
-                            <a class="projects-card" href="">
-                                <ul>
+                        <li class="projects-card">
+                            <a href="">
+                                <ul class="projects-card-content">
                                     <li class="projects-card-img">
-                                        <img class="projects-images" src="./images/img19.jpg" alt="Fresh Coffee">
+                                        <img class="projects-images" src="./images/for_mobile/mob_9.jpg" alt="Fresh Coffee">
                                         <p class="projects-images-content">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                     </li>
                                     <li class="projects-cardcontent">
@@ -202,50 +263,64 @@
     </section>
     
     <!-- подвал -->
-    <div class="section">
-        <footer class="footer">
-            <div class="container footer-flex">
-                <div class="footer-text">
-                    <a class="footer-logo" href="./index.html">
-                        <span class="accent">WEB</span>STUDIO
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-text">
+                <a class="footer-logo logo" href="./index.html">
+                    <span class="accent">WEB</span>STUDIO
+                </a>
+                <!-- поштова адреса -->
+                <address class="address" lang="uk-ua">м. Київ,<br> Бульвар Лесі Українки, б. 26,<br> 4й поверх офіс 427</address>
+            </div>
+            <div class="soc">
+                <h3 class="social">Social media</h3>
+                <div class="footer-nav">
+                    <a class="nav-social" href="">
+                        <svg width="40" height="40">
+                            <use href="./images/sprite.svg#icon-instagram_1"></use>
+                        </svg>
                     </a>
-                    <!-- поштова адреса -->
-                    <address class="address" lang="uk-ua">м. Київ,<br> Бульвар Лесі Українки, б. 26,<br> 4й поверх офіс 427</address>
+                    <a class="nav-social" href="">
+                        <svg width="40" height="40">
+                            <use href="./images/sprite.svg#icon-twitter_1"></use>
+                        </svg>
+                    </a>
+                    <a class="nav-social" href="">
+                        <svg width="40" height="40">
+                            <use href="./images/sprite.svg#icon-facebook_1"></use>
+                        </svg>
+                    </a>
+                    <a class="nav-social" href="">
+                        <svg width="40" height="40">
+                            <use href="./images/sprite.svg#icon-linkedin_1"></use>
+                        </svg>
+                    </a>
                 </div>
-                <div class="soc">
-                    <h3 class="social">Social media</h3>
-                    <div class="footer-nav">
-                        <a class="nav-social" href="">
-                            <svg width="40" height="40">
-                                <use href="./images/sprite.svg#icon-instagram_1"></use>
-                            </svg>
-                        </a>
-                        <a class="nav-social" href="">
-                            <svg width="40" height="40">
-                                <use href="./images/sprite.svg#icon-twitter_1"></use>
-                            </svg>
-                        </a>
-                        <a class="nav-social" href="">
-                            <svg width="40" height="40">
-                                <use href="./images/sprite.svg#icon-facebook_1"></use>
-                            </svg>
-                        </a>
-                        <a class="nav-social" href="">
-                            <svg width="40" height="40">
-                                <use href="./images/sprite.svg#icon-linkedin_1"></use>
-                            </svg>
-                        </a>
-                    </div>
+            </div>
+            <div class="sub">
+                <h3 class="subscribe-title">Subscribe</h3>
+                <div>
+                    <input class="subscribe-button-input" type="email" name="email"size="40" placeholder="E-mail">
                 </div>
-                <div class="sub">
-                    <h3 class="subscribe">Subscribe</h3>
-                    <div class="subscribe-flex">
-                        <input class="subscribe-button-input" type="email" name="email" placeholder="E-mail">
-                        <a class="subscribe-button-subscribe" href="">Subscribe</a>
-                    </div>
-                </div>
-            </div>            
-        </footer>
-    </div>
+                <button class="sub-button-subscribe">
+                    <p class="subscribe-button-subscribe">Subscribe</p>
+                    <svg class="icon-send" width="24" height="20">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>                   
+                
+                
+            </div>
+        </div>            
+    </footer>
+    
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

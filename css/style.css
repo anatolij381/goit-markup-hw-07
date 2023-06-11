@@ -495,6 +495,9 @@ html {
     }
         
     .team-name {
+
+        max-width: 100%;
+        display: block;
         margin: 0;
         font-weight: 500;
         font-size: 20px;
@@ -506,6 +509,8 @@ html {
         color: var(--navy-blue);
     }
     .team-card .text {
+        max-width: 100%;
+        display: block;
         margin-top: 8px;
         font-weight: 400;
         font-size: 16px;
@@ -533,6 +538,10 @@ html {
         padding-top: 96px;
         padding-bottom: 96px;
     }
+    .clients .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
     .clients-icon {
         display: block;
@@ -552,7 +561,7 @@ html {
     .clients-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
         
     .clients-card {
@@ -560,6 +569,9 @@ html {
         max-width: 100%;
         height: auto;
         margin-top: 72px;
+        margin-left: 8px;
+        margin-right: 8px;
+        
         padding: 16px 40px;
         width: 190px;
         height: 88px;
@@ -639,11 +651,16 @@ html {
     
     .sub {
         margin-top: 72px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
 
     }
-    .subscribe {
+    .subscribe-title {
         margin: 0;
-        text-align: center;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.5;
@@ -653,14 +670,11 @@ html {
         color: var(--background-header);
     }
 
-    .subscribe-flex {
-        display: flex;
-        flex-direction: column;
-    }
     .subscribe-button-input {
-        margin-top: 16px;
+        
+
         padding-left: 16px;
-        max-width: 396px;
+        
         height: 40px;
         background-color: var(--navy-blue);
         
@@ -672,51 +686,201 @@ html {
         
         color: rgba(255, 255, 255, 0.6);
     }
-    
-    .subscribe-button-subscribe {
-        margin-top: 16px;
+
+    .sub-button-subscribe {
         text-decoration: none;
-        padding: 8px 24px;
-        margin-left: auto;
-        margin-right: auto;
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        
         width: 168px;
         height: 40px;
-        
-        background: var(--iris);
+        padding: 8px 24px;
         border-radius: 4px;
         
+        background: var(--iris);
+        
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .subscribe-button-subscribe {
+
         font-weight: 700;
         font-size: 16px;
         line-height: 1.5;    
         letter-spacing: 0.06em;
         
         color: var(--background-header);
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
     }
     
-    .subscribe-button-subscribe:active {
+    .sub-button-subscribe:active {
         background-color: var(--ocean);
     }
     
-    .subscribe-button-subscribe::after {
-        content: url(/images/icon_send.svg);
-        width: 24px;
-        height: 20px;
-    }
     .doing {
         display: none;
     }
-   
 
     
+    
+   
+    .filters {
+        /* outline: 1px solid red; */
+        padding-top: 48px;
+        padding-bottom: 48px;
+        margin-left: 0;
+        margin-right: auto;
+
+    }
+    .filters-title {
+        display: none;
+        margin: 0px;
+        align-items: center;
+    }
+    .filters-list {
+        /* outline: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+    .filters-list-flex {
+        display: flex;
+        gap: 24px;
+        padding: 0;
+    }
+
+    
+    .filters-button {
+        /* outline: 1px solid red; */
+
+        color: var(--iris);
+        background-color: var(--cloud);
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        font-style: normal;
+        padding: 8px 16px;
+        border: 1px solid var(--CORNFLOWER);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition-property: background-color,
+        box-shadow, color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .filters-button:hover,
+    .filters-button:focus {
+        /* outline: 1px solid red; */
+
+        background-color: var(--ocean);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--background-header);
+    }
 
 
+
+    .projects li {
+        list-style: none;
+    }
+    .projects h2 {
+        display: none;
+    }
+    .projects-list {
+        margin: 0;
+        padding: 0;
+
+    }
+    .projects-section-list {
+        padding: 0;
+        
+    }
+    .projects-card {
+        /* outline: 1px solid red; */
+        padding-bottom: 32px;
+        margin-bottom: 48px;
+        
+        background: var(--background-header);
+               
+        border: 0.5px solid var(--cloud);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+        transition-property: box-shadow;
+    }
+    .projects-card a {
+        text-decoration: none;
+    }
+    .projects-card-content {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .projects-cardcontent {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 16px;
+        margin-top: 32px;
+        
+    }
+    .projects-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
+        letter-spacing: 0.02em;
+               
+        color: var(--navy-blue);
+        margin: 0;
+        
+    }
+    .projects-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        
+        letter-spacing: 0.02em;
+                
+        color: var(--slate);
+        margin: 0;
+    }
+    .projects-card-img {
+        position: relative;
+    }
+    .projects-images-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 40px 32px;
+        opacity: 0;
+        background-color: var(--iris);
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;    
+        letter-spacing: 0.02em;
+        
+        color: var(--cloud);
+    }
+    .projects-card:hover .projects-images-content,
+    .projects-card:focus .projects-images-content {
+        opacity: 1; 
+        transform: translateY(0);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);; 
+        transition-property: transform, opacity;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+}
