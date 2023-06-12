@@ -24,7 +24,6 @@ html {
         position: relative;
         font-family: 'Roboto';
         font-style: normal;
-        width: 428px;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
@@ -49,6 +48,7 @@ html {
             /* MODAL */
             
     .backdrop {
+        
         position: fixed;
         width: 100%;
         height: 100%;
@@ -224,8 +224,8 @@ html {
         position: fixed;
         top: 0;
         left: 0;
-        width: 428px;
-        height: 796px;
+        width: 100%;
+        height: auto;
         padding: 40px;
 
         background: var(--background-header);
@@ -314,6 +314,14 @@ html {
         gap: 56px;
 
     }
+    @media screen and (min-width: 428px) {
+        .body {
+            width: 428px;
+        }
+        
+    }
+
+/* ШАПКА */
 
     .header {
         padding-top: 24px;
@@ -359,10 +367,9 @@ html {
         /* HERO */
         
     .hero {
-        
+        display: block;
         text-align: center;
-        padding-top: 110px; 
-        padding-bottom: 110px;
+        padding: 110px 55px;
         background-color: var(--navy-blue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
         url(../images/people-office1.jpg);
@@ -370,12 +377,15 @@ html {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .hero-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 0;
+    }
     .hero-title {
         margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 317px;
-        height: 80px;
     }
         
     .hero-title-text {
@@ -392,9 +402,6 @@ html {
     }
         
     .button {
-        margin-top: 80px;
-        margin-left: auto;
-        margin-right: auto;
         display: inline-block;
         padding: 16px 32px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -416,9 +423,6 @@ html {
         /* advantage */
         
     .advantage {
-        
-
-
         padding-top: 96px;
         padding-bottom: 96px;
     }
@@ -467,7 +471,6 @@ html {
         /* TEAM */
         
     .team {
-        width: 428px;
         background-color: var(--cloud);
         padding: 96px 82px;
     }
@@ -1075,6 +1078,19 @@ html {
     .subscribe-title {
         display: inline;
         width: 500px;
+    }
+    .filters-list {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+    }
+    .filters {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .projects-list {
+        display: flex;
+        
     }
 
 
