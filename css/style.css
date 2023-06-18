@@ -693,6 +693,9 @@ img {
     .advantage .text {
         font-weight: 400;
     }
+    .advantage-flex {
+        justify-content: space-between;
+    }
     .advantage-flex li {
         width: 264px;
     }
@@ -733,6 +736,7 @@ img {
         gap: 24px;
         padding: 0;
         margin: 0;
+        justify-content: space-between;
     }
 }
 
