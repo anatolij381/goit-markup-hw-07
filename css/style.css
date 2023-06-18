@@ -43,9 +43,9 @@ html {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .body {
-        width: 1440px;
+        width: 1258px;
     }
 }   
 
@@ -62,10 +62,10 @@ html {
     }
 }
     
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .container {
-        padding-left: 156px;
-        padding-right: 156px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
     
@@ -408,7 +408,7 @@ img {
 .contacts {
     display: none;
 }
-@media screen and (min-width:768px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1257px) {
     .header .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -493,7 +493,7 @@ img {
     }
 }
     
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .header {
         padding-bottom: 24px;
     }
@@ -564,7 +564,7 @@ img {
         line-height: 1.07;
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .hero {
         padding-top: 192px;
         padding-bottom: 192px;
@@ -642,7 +642,7 @@ img {
 .contacts-mail:focus {
     color: var(--ocean);
 }
-@media screen and (min-width:768px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1257px) {
     .advantage .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -667,7 +667,7 @@ img {
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .advantage {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -703,7 +703,7 @@ img {
 .doing {
     display: none;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .doing {
         display: block;
         padding-bottom: 120px;
@@ -853,7 +853,7 @@ img {
         padding-right: 16px;
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .team {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -938,7 +938,7 @@ img {
         margin: 0;
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .clients {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -1126,7 +1126,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1258px) {
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;
