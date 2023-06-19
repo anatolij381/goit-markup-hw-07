@@ -300,6 +300,7 @@ img {
 }
 
 .modalmenu-page .nav {
+    display: inline-block;
     text-decoration: none;
     font-weight: 600;
     font-size: 36px;
@@ -320,6 +321,8 @@ img {
 
 .modalmenu-contacts {
     margin-top: 284px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .modalmenu-contacts .tel {
@@ -335,7 +338,7 @@ img {
 }
 
 .modalmenu-contacts .mail {
-    display: block;
+    display: inline-block;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
