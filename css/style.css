@@ -33,23 +33,24 @@ html {
 
 @media screen and (min-width: 428px) {
     .body {
-        width: 428px;
+        /* width: 428px; */
     }
 }
     
 @media screen and (min-width: 768px) {
     .body {
-        width: 768px;
+        /* width: 768px; */
     }
 }
 
 @media screen and (min-width: 1258px) {
     .body {
-        width: 1258px;
+        /* width: 1258px; */
     }
 }   
 
 .container {
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -57,6 +58,7 @@ html {
 }
 @media screen and (min-width: 768px) {
     .container {
+        max-width: 768px;
         padding-left: 108px;
         padding-right: 108px;
     }
@@ -64,6 +66,7 @@ html {
     
 @media screen and (min-width: 1258px) {
     .container {
+        max-width: 1258px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -273,7 +276,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    max-width: 428px;
     height: 100vh;
     padding: 40px;
     overflow-y: auto;
@@ -778,6 +781,9 @@ img {
 }
 
 .team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -867,8 +873,6 @@ img {
         list-style: none;
     }
     .team-flex {
-        display: flex;
-        flex-wrap: wrap;
         gap: 24px;
         margin: 0;
         padding: 0;
